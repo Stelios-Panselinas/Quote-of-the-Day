@@ -37,13 +37,14 @@ async function fetchQuote() {
     const data = await response.json();
     
     // Update quote text and author
-    quoteText.textContent = data.content;
-    quoteAuthor.textContent = data.author;
+  //   quoteText.textContent = data.content;
+  //   quoteAuthor.textContent = data.author;
 
-  } catch (error) {
-    quoteText.textContent = 'Failed to load quote. Please try again.';
-    quoteAuthor.textContent = '';
-    console.error('Error fetching quote:', error);
+  // } catch (error) {
+  //   quoteText.textContent = 'Failed to load quote. Please try again.';
+  //   quoteAuthor.textContent = '';
+  //   console.error('Error fetching quote:', error);
+  // 
   } finally {
     // Re-enable button
     newQuoteBtn.disabled = false;
