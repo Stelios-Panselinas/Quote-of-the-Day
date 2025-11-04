@@ -16,7 +16,7 @@ async function fetchQuote() {
     newQuoteBtn.textContent = 'Loading...';
 
     // Use our backend API endpoint instead of directly calling the external API
-    const response = await fetch('/api/quote');
+    const response = await fetch('https://api.quotable.io/random');
     
     if (!response.ok) {
       throw new Error('Failed to fetch quote');
